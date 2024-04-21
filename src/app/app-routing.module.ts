@@ -14,7 +14,11 @@ const routes: Routes = [
   {
     path: 'asset/:id',
     loadChildren: () => import('./asset-detail/asset-detail.module').then((m) => m.AssetDetailPageModule),
-  }
+  },
+  // {
+  //   path: 'page-down-alert',
+  //   loadChildren: () => import('./page-down-alert/page-down-alert.module').then( m => m.PageDownAlertPageModule)
+  // }
 ]
 
 @NgModule({

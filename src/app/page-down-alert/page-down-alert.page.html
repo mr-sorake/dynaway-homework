@@ -1,0 +1,16 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>Page Down Alert</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+<ion-content>
+
+  <ion-button (click)="displayAlert(true)" shape="round"
+    style="display: flex; justify-content: center; align-items: center; height: 10; max-width: 5;">
+    Click here
+  </ion-button>
+  <ion-alert [isOpen]="isAlertOpen" header="Slow Netwok Detected"
+    message="Please try to refresh the page again and proceed." [buttons]="alertButtons"
+    (didDismiss)="displayAlert(false)"></ion-alert>
+
+</ion-content>

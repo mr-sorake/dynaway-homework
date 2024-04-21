@@ -6,6 +6,7 @@ import { HomePage } from './home.page'
 
 import { HomePageRoutingModule } from './home-routing.module'
 import { AssetCardComponent } from './asset-card/asset-card.component'
+import { PageDownAlertPageModule } from '../page-down-alert/page-down-alert.module'
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { AssetCardComponent } from './asset-card/asset-card.component'
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
+    PageDownAlertPageModule
   ],
   declarations: [HomePage, AssetCardComponent]
 })
